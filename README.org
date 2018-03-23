@@ -1,0 +1,13 @@
+#+TITLE: Minimal barebones CLion Arduino example
+
+This is a minimal example, built around the blink sketch, that demonstrates
+how to work on your arduino sketches using CLion.
+
+See the accompanying blog post [link to be added].
+
+* Alternatives
+
+- Visual Studio Code with [[https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-arduino][the Arduino extension]] is amazing and works
+  out of the box.
+- PlatformIO CLion integration:
+  http://docs.platformio.org/en/latest/ide/clion.html
