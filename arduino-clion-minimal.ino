@@ -4,6 +4,8 @@
  *
  * We keep the ino empty, and put our code in a separate CPP file so that CLion works correctly.
  *
+ * (for this demonstration, we have made use of the blink sketch which is distributed with arduino ide.)
+ *
  */
 
 /*
