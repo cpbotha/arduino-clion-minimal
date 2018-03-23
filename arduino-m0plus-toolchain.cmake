@@ -11,15 +11,16 @@ set(CMAKE_C_COMPILER ${ARDUINO_PACKAGES}/arduino/tools/arm-none-eabi-gcc/4.8.3-2
 set(CMAKE_CXX_COMPILER ${ARDUINO_PACKAGES}/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-g++)
 
 # use arduino --verify --verbose command, then wait for FINAL cpp compilation to extract these arguments, the include
-# directories below, and the definitions below that.
-# look in the output for "Compiling sketch..."
-SET(COMMON_FLAGS "-mcpu=cortex-m0plus -mthumb -c -g -Os -w -ffunction-sections -fdata-sections -fno-threadsafe-statics -nostdlib --param max-inline-insns-single=500")
-SET(CMAKE_CXX_FLAGS "${COMMON_FLAGS} -fno-rtti -fno-exceptions -MMD")
+# directories below this, and the definitions below that.
+# hint: look in the output for "Compiling sketch..."
+SET(COMMON_FLAGS "-mcpu=cortex-m0plus -mthumb -c -g -Os -w -ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single=500 -MMD")
+SET(CMAKE_CXX_FLAGS "${COMMON_FLAGS} -fno-threadsafe-statics -fno-rtti -fno-exceptions")
 SET(CMAKE_C_FLAGS "${COMMON_FLAGS}")
 
 # BLOODY HELL it's all because it's an ino file and not a cpp ARGH ARGH ARGH don't be so primitve!
 # http://docs.platformio.org/en/latest/faq.html#convert-arduino-file-to-c-manually
-# (clion ignores all of these if you try to keep your code in the .ino file, that's why we move it out to cpp!)
+# (clion ignores all of these if include directories you try to keep your code in the .ino file,
+#  that's why we move it out to cpp!)
 include_directories(
         ${ARDUINO_PACKAGES}/arduino/tools/CMSIS/4.5.0/CMSIS/Include/
         ${ARDUINO_PACKAGES}/arduino/tools/CMSIS-Atmel/1.1.0/CMSIS/Device/ATMEL/
