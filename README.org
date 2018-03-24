@@ -1,7 +1,10 @@
 #+TITLE: Minimal barebones CLion Arduino example
 
-This is a minimal example, built around the blink sketch, that demonstrates
-how to work on your arduino sketches using CLion.
+This is a minimal example, built around the blink sketch, that
+demonstrates how to work on your arduino sketches using CLion using no
+additional software.
+
+Tested with CLion 2017.3.1 and Arduino 1.8.5 on Uno and M0.
 
 See the [[https://vxlabs.com/2018/03/24/developing-arduino-sketches-with-jetbrains-clion-a-minimal-example/][explanatory blog post]] for more details.
 
@@ -11,3 +14,4 @@ See the [[https://vxlabs.com/2018/03/24/developing-arduino-sketches-with-jetbrai
   out of the box.
 - PlatformIO CLion integration:
   http://docs.platformio.org/en/latest/ide/clion.html
+- Arduino CMake: https://github.com/queezythegreat/arduino-cmake
