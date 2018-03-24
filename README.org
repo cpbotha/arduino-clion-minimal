@@ -3,7 +3,7 @@
 This is a minimal example, built around the blink sketch, that demonstrates
 how to work on your arduino sketches using CLion.
 
-See the accompanying blog post [link to be added].
+See the [[https://vxlabs.com/2018/03/24/developing-arduino-sketches-with-jetbrains-clion-a-minimal-example/][explanatory blog post]] for more details.
 
 * Alternatives
 
