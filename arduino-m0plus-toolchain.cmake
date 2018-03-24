@@ -1,3 +1,5 @@
+# copyright 2018 by Charl P. Botha <cpbotha@vxlabs.com>
+
 SET(CMAKE_SYSTEM_NAME Generic)
 SET(CMAKE_SYSTEM_VERSION 1)
 

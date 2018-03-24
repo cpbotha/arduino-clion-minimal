@@ -1,3 +1,5 @@
+# copyright 2018 by Charl P. Botha <cpbotha@vxlabs.com>
+
 cmake_minimum_required(VERSION 3.9)
 
 project(arduino-clion-minimal)
