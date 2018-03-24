@@ -10,6 +10,7 @@ include_directories(
 )
 
 # use this target for a quick compile-only check of your CPP files
+# add more source (CPP) files here when you add them to the sketch
 add_executable(arduino-clion-minimal blink-main.cpp)
 set_target_properties(arduino-clion-minimal PROPERTIES LINKER_LANGUAGE CXX)
 
